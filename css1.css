@@ -1,0 +1,150 @@
+body {
+    font-family: "Garamond", serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+	background-color: #F9F1F0;
+}
+
+.upper {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 10px;
+}
+
+.navigationbar ul {
+    list-style-type: none;
+    background-color: #FADCD9;
+    padding: 15px;
+    margin: 2px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.navigationbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-variant: small-caps;
+}
+
+.navigationbar a:hover {
+    color: white;
+    background-color: #F8AFA6;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.navigationbar li {
+    float: right;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.div1, .div2,.cat1 {
+    background-color: #FADCD9;
+    border-radius: 15px;
+    padding: 10px;
+    width: 30%; 
+    box-sizing: border-box; 
+}
+
+.img1 {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-top: 2px;
+}
+
+.div1 h1 {
+    margin-left: 10px;
+    padding: 1px;
+}
+
+.div1 p {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.div2 h2 {
+    margin: 10px;
+}
+
+.div2 ul {
+    list-style-type: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.div2 hr {
+    width: 50%;
+    color: #F8AFA6;
+    background: #F8AFA6;
+}
+
+.div2 a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.div2 a:hover {
+    color: white;
+    background-color: #F8AFA6;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.lower {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.div3{
+	background-color: #F8AFA6;
+	border-radius: 15px;
+    padding: 10px;
+    width: 30%; 
+    box-sizing: border-box; 
+}
+
+
+.div4,.cat2 {
+    background-color: #FADCD9;
+    border-radius: 15px;
+    padding: 10px;
+    width: 30%; 
+    box-sizing: border-box; 
+}
+
+
+
+.div4 p{
+	padding:20px;
+}
+
+.div3 p,h1{
+	padding:20px;
+}
+
+.img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 15px; 
+}

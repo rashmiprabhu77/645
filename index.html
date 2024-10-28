@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Survey HW1 RP</title>
+        <link rel="stylesheet" href="surveycss.css">
+        <link rel="stylesheet" href="css1.css">
+    </head>
+    
+    <body>
+
+        <div>
+            <nav class="navigationbar">
+                <ul>
+                    <li><a href="http://52.90.218.19/Survey.html">Survey</a></li>
+                    <li><a href="http://rashmi645.s3-website-us-east-1.amazonaws.com/">Home</a></li>
+                </ul>
+            </nav>
+            </div>
+        
+            <br><br>
+        <div class="main">
+            <h1>Survey</h1>
+            <hr>
+            <p>Please take the survey below.</p>
+            <form>
+                <label for="firstname">First Name*:</label> &nbsp;
+                <input type="text" id="firstname" name="firstname" required> <br><br>
+
+                <label for="lastname">Last Name*:</label> &nbsp;
+                <input type="text" id="lastname" name="lastname" required> <br><br>
+
+                <label for="street">Street Address*:</label> &nbsp;
+                <input type="text" id="street" name="street" required> <br><br>
+
+                <label for="city">City* :</label> &nbsp;
+                <input type="text" id="city" name="city" required> <br><br>
+
+                <label for="state">State* :</label> &nbsp;
+                <input type="text" id="state" name="state" required> <br><br>
+
+                <label for="zip">Zip Code* :</label> &nbsp;
+                <input type="number" id="zip" name="zip" required> <br><br>
+
+                <label for="email">Email* :</label> &nbsp;
+                <input type="text" id="email" name="email" required> <br><br>
+
+                <label for="telephone">Telephone* :</label> &nbsp;
+                <input type="text" id="telephone" name="telephone" required> <br><br>
+
+                <p>Please select everything you liked about our university</p>
+
+                <input type="checkbox" id="students" name="students" value="friends"> 
+                <label for="students">Meeting fellow Patrons</label><br>
+
+                <input type="checkbox" id="location" name="location" value="area"> 
+                <label for="location">Location of the Campus</label><br>
+                
+                <input type="checkbox" id="campus" name="campus" value="college"> 
+                <label for="campus">Campus itself</label><br>
+
+                <input type="checkbox" id="atmosphere" name="atmosphere" value="ambience"> 
+                <label for="atmosphere">Atmosphere</label><br>
+                
+                <input type="checkbox" id="dorms" name="dorms" value="hostel"> 
+                <label for="dorms">Dorms</label><br>
+
+                <input type="checkbox" id="sports" name="sports" value="games"> 
+                <label for="dorms">Sports</label><br>
+
+                <p>Please tell us how you you found out about the university</p>
+
+                <input type="radio" id="friend" name="interest" value="people"> 
+                <label for="friend">Through Friends or Family</label><br>
+
+                <input type="radio" id="television" name="interest" value="TV"> 
+                <label for="television">Watched an ad on TV</label><br>
+
+                <input type="radio" id="Internet" name="interest" value="web"> 
+                <label for="Internet">Internet (sites or socials)</label><br>
+
+                <input type="radio" id="other" name="interest" value="different"> 
+                <label for="other">Other</label><br><br>
+
+                <label for="recommend">How likely are you to recommend us</label>
+                <select name="recommend" id="recommend" style="font-family: Garamond, serif" width="15%">
+                    <option value="high" >Very Likely</option>
+                    <option value="medium">Likely</option>
+                    <option value="low">Unlikely</option>
+                </select><br><br>
+                
+                <h3>°°°·.°·..· Surprise Raffle for a Movie Ticket! ·..·°.·°°°</h3>
+                <p>Stand a chance to win a prize. All you have to do is enter atleast 10 comma separated numbers ranging from 1 through 100. Any number of your choice. Good Luck!</p>
+                <input type="text" id="raffle" placeholder="Example: 1,2,3,4,5,..." pattern="(?:[1-9][0-9]?|100)(?:,(?:[1-9][0-9]?|100)){9,}"><br><br>
+
+                <label for="review">Any additional comments?</label><br><br>
+                <textarea id="review" name="review" rows="5" cols="50" style="font-family: Garamond, serif;">Please enter your comments here...
+                </textarea>
+
+                <br><br>
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Clear" class="button">
+            </form>
+        </div>
+
+    </body>
+</html>

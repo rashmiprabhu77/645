@@ -1,0 +1,60 @@
+body{
+	font-family: "Garamond", serif;
+}
+
+.main{
+    background-color: #FFE4E1;
+  
+	border-radius: 15px;
+	padding:30px;
+    text-align: center;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+option{
+    background-color: #f8b5a4;
+    font-family: "Garamond", serif;
+}
+
+select{
+    width: 15%;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #f8b5a4;
+    box-shadow: 10px black;
+}
+
+input::placeholder{
+    font-family: "Garamond", serif;
+}
+
+h1{
+    color: #FA8072;
+    text-shadow: black 1px 1px;
+}
+
+hr{
+    height: 1px;
+    color:#FA8072;
+    background-color: #FA8072;
+    border:none;
+}
+
+input{
+    border-radius: 15px;
+    padding:5px;
+}
+
+textarea{
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.button{
+    padding: 10px;
+    font-family: "Garamond", serif;
+    font-variant: small-caps;
+    background-color: #f8b5a4;
+}
