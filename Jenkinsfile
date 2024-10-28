@@ -36,7 +36,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([file(credentialsId: "$KUBE_CONFIG", variable: 'KUBECONFIG')]) {
-                        sh "kubectl set image deployment/swe645h2 swe645h2_container=${DOCKER_IMAGE_NAME}:${TIMESTAMP} --all"
+                        sh "kubectl set image deployment/swe645h2 swe645h2=${DOCKER_IMAGE_NAME}:${TIMESTAMP} --all"
                     }
                 }
             }
