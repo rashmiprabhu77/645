@@ -9,7 +9,6 @@ pipeline {
     }
     
     stages {
-    
         stage('Build Docker Image') {
             steps {
                 script {
@@ -24,14 +23,15 @@ pipeline {
             steps {
                 script {
                     def dockerImage = "${DOCKER_IMAGE_NAME}:${TIMESTAMP}"
-                    withCredentials([usernamePassword(credentialsId: 'DockerHub_ID', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                        sh "docker login -u rashmi77 -p dckr_pat_ErN7NL5aSXTNePTrOJE10u7_QK8"
+                    // Use the credentials set in the environment variable
+                    withCredentials([usernamePassword(credentialsId: 'Docker_Cred', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                        sh "echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin"
+                        sh "docker push ${dockerImage}"
                     }
-
-                    sh "docker push ${dockerImage}"
                 }
             }
         }
+
 
         stage('Update Kubernetes Deployment') {
             steps {
