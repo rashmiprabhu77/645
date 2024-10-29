@@ -1,11 +1,11 @@
 pipeline {
     agent any
     environment {
-        DOCKER_HUB_CREDENTIALS = credentials('Docker_Cred') 
+        DOCKER_HUB_CREDENTIALS = credentials('Docker_Credredential') 
         GIT_REPO = 'https://github.com/rashmiprabhu77/645' 
         DOCKER_IMAGE_NAME = 'rashmi77/swe645h2' 
         TIMESTAMP = new Date().format('yyyyMMdd-HHmmss')
-        KUBE_CONFIG = 'Kubeconfig'
+        KUBE_CONFIG = 'Kube'
     }
     
     stages {
