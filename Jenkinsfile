@@ -23,8 +23,8 @@ pipeline {
             steps {
                 script {
                     def dockerImage = "${DOCKER_IMAGE_NAME}:${TIMESTAMP}"
-                    withCredentials([usernamePassword(credentialsId: 'Docker_Cred', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                        sh "docker login -u rashmi77 -p dckr_pat_qHgBZd73wVpcmPqKUWeZ6NN8Mvo"
+                    withCredentials([usernamePassword(credentialsId: 'Docker_Credential', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                        sh "docker login -u rashmi77 -p dckr_pat_vgvIQrANmc36IIBU9vPTlTAp9ls"
                     }
 
                     sh "docker push ${dockerImage}"
