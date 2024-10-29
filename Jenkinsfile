@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_HUB_CREDENTIALS = credentials('Docker_Credredential') 
+        DOCKER_HUB_CREDENTIALS = credentials('Docker_Credential') 
         GIT_REPO = 'https://github.com/rashmiprabhu77/645' 
         DOCKER_IMAGE_NAME = 'rashmi77/swe645h2' 
         TIMESTAMP = new Date().format('yyyyMMdd-HHmmss')
